@@ -7,7 +7,7 @@ Slacking - Lazy modern C++ people also loves Slack !
 Simple C++ Slack API
 --------------------
 
-*Slacking* is a lightweight **C++11 header only library** (only two header files !) for communicating with the [Slack Web API](https://api.slack.com/web).  
+*Slacking* is a lightweight **C++11 header only library** (only two header files !) for communicating with the [Slack Web API](https://api.slack.com/web). Recently incoming webhooks are also managed. 
 *Slacking* aims to be easy to use and stick to the API style proposed by Slack. *Slacking* requires to have an [API token](https://api.slack.com/docs/oauth-test-tokens).
 
 
@@ -16,7 +16,7 @@ Requirements
 
 No special requirement. You should already have these :
 
-+ C++11 compatible compiler. Tested with Clang (3.5, 3.6, 3.7) and GCC (4.9, 5).
++ C++11 compatible compiler. Tested with Clang (3.5, 3.6, 3.7), GCC (4.9, 5), and Visual Studio 2015. [![Build Status](https://travis-ci.org/coin-au-carre/slacking.svg?branch=master)](https://travis-ci.org/coin-au-carre/slacking) [![Build status](https://ci.appveyor.com/api/projects/status/9v928kd5cwd82pt9?svg=true)](https://ci.appveyor.com/project/coin-au-carre/slacking)
 + [libcurl](https://curl.haxx.se/libcurl/) (which you probably already have).
 
 Note: *Slacking*  uses [Nlohmann Json](https://github.com/nlohmann/json) which is available in `include/json.hpp`
