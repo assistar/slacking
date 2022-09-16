@@ -195,7 +195,9 @@ Response Session::makeRequest() {
 inline
 std::string Session::easyEscape(const std::string& text) {
     char *encoded_output = curl_easy_escape(curl_, text.c_str(), static_cast<int>(text.length()));
-    return std::string{encoded_output};
+	const auto string = std::string{ encoded_output };
+	curl_free(encoded_output);
+	return string;
 }
 
 // forward declaration for category structures
